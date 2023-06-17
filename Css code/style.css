@@ -1,0 +1,255 @@
+
+
+body{
+    background-color: rgb(63, 63, 68);
+    color:#fff;
+}
+
+header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:  rgb(63, 63, 68);
+}
+
+.logo img{
+    height: 40px;
+    cursor: pointer;
+   
+}
+.logo{
+    color:#fff;
+}
+
+.search-bar{
+   
+    display: flex;
+    align-items: left;
+    margin: 20px;
+    cursor: pointer;
+    width: 600px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px; /* Adjust the padding as needed */
+}
+
+.search-bar input[type="text"] {
+    width:100%;
+    padding:10px;
+    font-size:16px;
+    background-color:  rgb(63, 63, 68);;
+    border-radius: 10px;
+}
+
+.search-bar:focus{
+    border-color:rgb(76, 5, 241);
+    outline:none;
+
+}
+svg{
+    background-color: yellow;
+    border-radius: 100px;
+    position: relative;
+    justify-content: right;
+}
+.search-bar button[type="submit"] {
+    padding:10px 20px;
+    font-size:16px;
+    background-color: rgb(63, 63, 68);
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+    border-radius: 10px;
+}
+
+.buttons button{
+    margin-left: 10px;
+    padding:10px 20px;
+    font-size: 16px;
+    background-color: rgb(63, 63, 68);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.about-item{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.about-item img {
+    width: 30px;
+    background-color: yellow;
+    padding:10px;
+    border-radius: 50px;
+    margin: 10px ;
+    height: 30;
+
+    
+
+  }
+
+
+.b{
+    background-color: yellow;
+    align-items: right;
+    border-radius: 40px;
+    font-size: large;
+    
+}
+ 
+
+  .about-item-right{
+   
+    display: flex;
+    justify-content:right;
+    
+  }
+
+  .categories-section {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: left;
+    
+  }
+  .category-card {
+
+    width:150px;
+    height:250px;
+    margin: 10px;
+  border-radius: 10px;
+  background-color:  rgb(63, 63, 68);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+ color:#dfd9d9;
+ justify-content: space-between;
+  }
+
+  .category-card:hover {
+    border-color: yellow;
+  }
+
+  @media (max-width: 768px) {
+    .categories-section {
+      justify-content: flex-start;
+    }
+  }
+  .category-card {
+    width: calc(33.33% - 20px);
+    /* ... rest of the card styling */
+  }
+
+  .category-card h3 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  .category-card h3 a:hover {
+    color: white;
+  }
+
+  .category-card h3  a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-top: 4px;
+  }
+  
+  .category-card p {
+    color: white;
+    text-decoration: none;
+  }
+  .category-card button {
+    justify-content: right;
+    background-color: yellow;
+    color: b
+    border none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+  }
+  
+  .category-card button:hover {
+    background-color: gold;
+  }
+  
+  .footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-description {
+    font-size: 14px;
+  }
+  
+  
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color:  rgb(63, 63, 68);
+  }
+  
+  .footer-box {
+    width: 30%;
+    background-color: rgb(63, 63, 68);
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-box p {
+    font-size: 14px;
+    color: #888;
+  }
+
+  .footer-box ul {
+
+    color: #888;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .know-more-button {
+    background-color: yellow;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
